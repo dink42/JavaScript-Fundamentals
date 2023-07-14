@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Product Details</title>
+	<script>
+		function handleRemove(){
+			let parent = document.getElementById("div1");
+			let child = document.getElementById("p2");
+			parent.removeChild(child);
+            // Creates nodes and append to function to remove p2 element
+
+		}
+		function handleCreate(){
+			let parent = document.getElementById("div1");
+			let child = document.createElement("p");
+			let text = document.createTextNode("TV - 2000$");
+			child.appendChild(text);
+			parent.appendChild(child);
+            // Same as first but here we create a new node
+		}
+	</script>
+</head>
+<body>
+	<div id="div1">
+		<p id="p1">Laptop - 1000$</p>
+		<p id="p2">Cellphone - 300$</p>
+	</div>
+	<input type="button" value="remove" onclick="handleRemove()">
+	<input type="button" value="create" onclick="handleCreate()">
+</body>
+</html>

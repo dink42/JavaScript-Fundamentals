@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>onmousedown/onmouseup using custom functions</title>
+	<script>
+	function handleMouseDownEvent(x){
+		x.style.color = "darkred";
+		x.style.backgroundColor="yellow";
+		x.innerHTML = "MOUSEDOWN";
+	}
+	function handleMouseUpEvent(y){
+		y.style.color = "yellow";
+		y.style.backgroundColor="blue";
+		y.innerHTML = "MOUSEUP";
+        y.onmousedow(removeEventListener);
+	}
+	</script>
+</head>
+<body>
+	<p style="padding: 20px; text-align: center; font-size: 35px;" onmousedown="handleMouseDownEvent(this)" onmouseup="handleMouseUpEvent(this)">Mouse Down/Mouse Up</p>
+</body>
+</html>
