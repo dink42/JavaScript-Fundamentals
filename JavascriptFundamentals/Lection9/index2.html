@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>form/validate</title>
+	<script>
+        
+		function validate() {
+            let color = document.myform.color.value;
+            if (color == "") {
+                alert('Select a color');
+                document.myform.color.focus();
+                return false;
+            }
+            else {
+                alert('validation succesful!');
+                return true;
+            }
+        }
+	</script>
+</head>
+<body>
+    <h3>Select Color</h3>
+    <form name="myform" action="dropdown.php" onsubmit="return validate()"/>
+        <select name="color">
+            <option value=""">Select a color</option>
+            <option value="blue">blue</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+        </select>
+        <input style="padding: 20px;" type="submit" value="submit"/>
+    </form>
+	
+</body>
+</html>

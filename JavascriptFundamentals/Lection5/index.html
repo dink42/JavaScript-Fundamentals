@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Grade Application</title>
+	<script>
+    function grades() {
+        let grade = parseInt(prompt('Enter grade for Math!'));
+        let grade1 = parseInt(prompt('Enter grade for Pyshics!'));
+        let grade2 = parseInt(prompt('Enter grade for Chemistry!'));
+
+        let average = (grade + grade1 + grade2)/3;
+        if (average< 70) {
+            document.write('Your grade is C');
+            
+        }
+        else if(average >= 70 && average < 90){
+			    document.write('You grade is B');
+        }
+        else {
+            document.write('Your grade is A');
+        }
+    }
+    grades();
+	</script>
+</head>
+</html>
