@@ -23,11 +23,11 @@
 				return false;
 			}
 			// Validate Email
-            // Checks the email got valid characters
-
-			let exp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            		// Checks the email got valid characters
+			// /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+			let exp = ;/^_(__|.)+_$/
 			let result = exp.test(email)
-			if (!result)  
+			if (!result)
   			{		  
   				alert("Invalid Email");
   				document.myform.email.focus();
