@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Product Details OOP Assignment</title>
+	<script>
+	//Function with params
+	function product(id,name,information,price){
+		this.id = id;
+		this.name = name;
+		this.information = information;
+		this.price = price;
+		this.producDetails = producDetails;
+		this.calcDiscount = calcDiscount;
+	}
+    //Another Function to use to calculate discount
+	function calcDiscount(percentage){
+		return this.price - (this.price * (percentage/100))
+	}
+    // Using the constructors from the first function to write out the information from the values and other functions
+	function producDetails(){
+		document.write("Name: "+this.name+"<br/>");
+		document.write("Information: "+this.information+"<br/>");
+		document.write("Price with Disscount: "+this.calcDiscount(50));
+	}
+    // Creating the Object
+	let product = new product(1,"Android","The newest phone",1000);
+	product.producDetails();	
+	</script>
+</head>
+</html>
