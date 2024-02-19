@@ -1,20 +1,19 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: ''
+title: 'Request for improvements and new impications'
 labels: enhancement, good first issue
-assignees: ''
 
 ---
 
 **Is your feature request related to a problem? Please describe.**
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+**Describe the ideas for the project you have**
+A clear and concise description of your ideas and what you want to happen.
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+**Give some details and thoughts about what made you request these changes**
+A clear and concise description of any ideas or features you've considered.
 
 **Let me know if you have something specific you may want to see in this repo**
 Be specific about what you want or think could help.
